@@ -1,0 +1,623 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+/*
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+*/
+*  {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* HEADER */
+header {
+  height: 580px;
+  background-image: url(../../images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header .header-flex {
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+}
+
+header .header-flex .burgerMenu {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+header .header-flex .burgerMenu:hover {
+  cursor: pointer;
+}
+
+header .header-flex .menuWrapper {
+  width: 85%;
+  height: 285px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: none;
+}
+
+header .header-flex .menuWrapper a {
+  text-decoration: none;
+  color: #818498;
+  font-size: 1.1em;
+}
+
+header .header-flex .menuWrapper button {
+  outline: none;
+  border: none;
+  background-color: #fad400;
+  padding: 15px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+}
+
+header .header-flex .menuWrapper button:hover {
+  cursor: pointer;
+}
+
+header .header-title {
+  text-align: center;
+  width: 100%;
+  margin: 25% auto;
+}
+
+header .header-title h1 {
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  color: white;
+  padding-bottom: 10px;
+}
+
+header .header-title .arrow-hdr img {
+  height: 120px;
+}
+
+@media (max-width: 320px) {
+  header .header-title {
+    text-align: center;
+    width: 100%;
+    margin: 25% auto;
+  }
+  header .header-title h1 {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 1.6rem;
+  }
+}
+
+/* EGGS BACKGROUND */
+.oeuf-bg {
+  width: 100%;
+  height: 300px;
+  background-image: url(../../images/mobile/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* TRANSFORM YOUR BRAND */
+.aboutYourBrand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.aboutYourBrand h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 2.5em;
+  padding-top: 30px;
+}
+
+.aboutYourBrand p {
+  font-size: 1.3em;
+  line-height: 1.8em;
+  color: #818498;
+  padding: 0 20px;
+}
+
+.aboutYourBrand a {
+  text-decoration: none;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  color: #23303e;
+  padding-bottom: 50px;
+}
+
+/* GLASS BAKCGROUND */
+.verre-bg {
+  width: 100%;
+  height: 300px;
+  background-image: url(../../images/mobile/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* STAND OUT TO THE RIGHT AUDIENCE */
+.standOut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.standOut h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 2.5em;
+  padding-top: 30px;
+}
+
+.standOut p {
+  font-size: 1.3em;
+  line-height: 1.8em;
+  color: #818498;
+  padding: 0 20px;
+}
+
+.standOut a {
+  text-decoration: none;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  color: #23303e;
+  padding-bottom: 50px;
+}
+
+/* GRAPHIC DESIGN & PHOTOGRAPHY */
+.flex-btm {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-btm h2 {
+  font-family: 'Fraunces', serif;
+  text-transform: capitalize;
+  font-size: 2em;
+}
+
+.flex-btm p {
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0 15px 30px 15px;
+  line-height: 1.5em;
+}
+
+.graphic-design {
+  background-image: url(../../images/mobile/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #25564b;
+}
+
+.photographie {
+  background-image: url(../../images/mobile/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #19536b;
+}
+
+/* CLIENT TESTIMONIAL */
+.testimonial-layout h3 {
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 1.2em;
+  color: #a7abae;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding-top: 50px;
+}
+
+.client-layout {
+  width: 80%;
+  margin: 75px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.client-layout img {
+  width: 25%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.client-layout p {
+  font-size: 1.1em;
+  padding: 0 5px;
+  line-height: 1.5em;
+  color: #818498;
+}
+
+.client-layout .names {
+  font-family: 'Fraunces', serif;
+  color: #23303e;
+}
+
+.client-layout .names span {
+  font-family: 'Barlow', sans-serif;
+  font-weight: lighter;
+  color: #818498;
+}
+
+.grid-layout {
+  width: 100%;
+  height: 450px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 225px 225px;
+      grid-template-rows: 225px 225px;
+}
+
+.grid-layout .lait {
+  background-image: url(../../images/mobile/image-gallery-milkbottles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-layout .oranges {
+  background-image: url(../../images/mobile/image-gallery-orange.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-layout .cone {
+  background-image: url(../../images/mobile/image-gallery-cone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-layout .sucre {
+  background-image: url(../../images/mobile/image-gallery-sugar-cubes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  color: #458c7e;
+  background-color: #90d4c5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .ftr-logo img {
+  width: 200px;
+  padding: 50px 0 30px 0;
+}
+
+footer .ftr-menu {
+  width: 66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+footer .ftr-menu a {
+  text-decoration: none;
+  color: #458c7e;
+}
+
+footer .ftr-menu a:hover {
+  color: white;
+}
+
+footer .ftr-icons {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #458c7e;
+}
+
+/* ---------------------------- DESKTOP -------------------------------------- */
+@media (min-width: 768px) {
+  header {
+    height: 100vh;
+    background-image: url(../../images/desktop/image-header.jpg);
+  }
+  header .header-flex {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  header .header-flex .burger {
+    display: none !important;
+  }
+  header .header-flex .menuWrapper {
+    width: auto;
+    height: auto;
+    display: block !important;
+    background-color: transparent;
+    position: inherit;
+  }
+  header .header-flex .menuWrapper a {
+    color: white;
+    padding: 0 1vw;
+  }
+  header .header-flex .menuWrapper a:hover {
+    color: #fad400;
+  }
+  header .header-flex .menuWrapper button {
+    background-color: white;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  header .header-flex .menuWrapper button:hover {
+    background-color: #fad400;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  header .header-title {
+    margin: 120px auto;
+  }
+  header .header-title h1 {
+    font-size: 4rem;
+    padding-bottom: 50px;
+  }
+  header .header-title .arrow-hdr img {
+    height: 120px;
+  }
+  .grid-layout-desktop {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 75vh 75vh 75vh;
+        grid-template-rows: 75vh 75vh 75vh;
+  }
+  .grid-layout-desktop .oeuf-bg {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/desktop/image-transform.jpg);
+  }
+  .grid-layout-desktop .verre-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/desktop/image-stand-out.jpg);
+  }
+  .aboutYourBrand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    padding: 0 7vw 0 10vw;
+  }
+  .aboutYourBrand h2 {
+    font-size: 2.6em;
+    font-weight: 900;
+    padding-top: 0px;
+  }
+  .aboutYourBrand p {
+    font-size: 1.15em;
+    line-height: 1.8em;
+    padding: 0 0px;
+  }
+  .aboutYourBrand a {
+    padding-bottom: 0px;
+  }
+  .standOut {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    padding: 0 10vw 0 7.6vw;
+  }
+  .standOut h2 {
+    font-size: 2.5em;
+    font-weight: 900;
+    padding-top: 0px;
+  }
+  .standOut p {
+    font-size: 1.15em;
+    line-height: 1.8em;
+    padding: 0 0px;
+  }
+  .standOut a {
+    padding-bottom: 0px;
+  }
+  .graphic-design {
+    background-image: url(../../images/desktop/image-graphic-design.jpg);
+  }
+  .photographie {
+    background-image: url(../../images/desktop/image-photography.jpg);
+  }
+  .flex-btm h2 {
+    font-size: 1.7em;
+    font-weight: 900;
+  }
+  .flex-btm p {
+    text-align: center;
+    font-size: 1em;
+    padding: 0 25% 30px 25%;
+    line-height: 1.5em;
+  }
+  .testimonial-layout h3 {
+    padding-top: 150px;
+  }
+  .client-grid {
+    width: 78%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 70px;
+  }
+  .client-layout img {
+    width: 70px;
+    margin-bottom: 50px;
+  }
+  .client-layout p {
+    font-size: 1.1em;
+    padding: 0 18px;
+    line-height: 1.7em;
+    color: #818498;
+  }
+  .client-layout .names span {
+    font-size: 0.8em;
+  }
+  .grid-layout {
+    width: 100%;
+    height: 56.5vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+    -ms-grid-rows: 56.5vh;
+        grid-template-rows: 56.5vh;
+  }
+  .grid-layout .lait {
+    background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
+  }
+  .grid-layout .oranges {
+    background-image: url(../../images/desktop/image-gallery-orange.jpg);
+  }
+  .grid-layout .cone {
+    background-image: url(../../images/desktop/image-gallery-cone.jpg);
+  }
+  .grid-layout .sucre {
+    background-image: url(../../images/desktop/image-gallery-sugarcubes.jpg);
+  }
+  footer .ftr-menu {
+    width: 300px;
+    font-size: 1.1em;
+  }
+  footer .ftr-icons {
+    width: 170px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

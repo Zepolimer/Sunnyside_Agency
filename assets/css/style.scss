@@ -1,0 +1,514 @@
+$Soft-red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$Graphic-design-text: hsl(167, 40%, 24%);
+$Photography-text: hsl(198, 62%, 26%);
+$Footer: hsl(168, 34%, 41%);
+$Footer-bg: rgb(144, 212, 197);
+
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Dark-grayish-blue: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+/*
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* HEADER */
+header {
+    height: 580px;
+    background-image: url(../../images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    .header-flex {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+
+        .burgerMenu {
+            outline: none;
+            border: none;
+            background-color: transparent;
+        }
+        .burgerMenu:hover {
+            cursor: pointer;
+        }
+
+        .menuWrapper {
+            width: 85%;
+            height: 285px;
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        
+            background-color: $White;
+        
+            position: absolute;
+            top: 110px;
+            left: 50%;
+            transform: translate(-50%);
+        
+            display: none;
+        
+            a {
+                text-decoration: none;
+                color: $Dark-grayish-blue;
+                font-size: 1.1em;
+            }
+            button {
+                outline: none;
+                border: none;
+                background-color: $Yellow;
+                padding: 15px 25px;
+                border-radius: 25px;
+                text-transform: uppercase;
+                font-family: 'Fraunces', serif;
+            }
+            button:hover { cursor: pointer ;}
+        }
+    }
+
+    .header-title {
+        text-align: center;
+        width: 100%;
+        margin: 25% auto;
+
+        h1 {
+            font-family: 'Fraunces', serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            font-size: 3rem;
+            color: $White;
+            padding-bottom: 10px;
+        }
+        .arrow-hdr img {
+            height: 120px;
+        }
+    }
+}
+@media (max-width: 320px) {
+    header {
+    .header-title {
+        text-align: center;
+        width: 100%;
+        margin: 25% auto;
+
+        h1 {
+            font-family: 'Fraunces', serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            font-size: 1.6rem;
+        }
+    }
+}
+}
+
+/* EGGS BACKGROUND */
+.oeuf-bg {
+    width: 100%;
+    height: 300px;
+    background-image: url(../../images/mobile/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* TRANSFORM YOUR BRAND */
+.aboutYourBrand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        font-family: 'Fraunces', serif;
+        font-size: 2.5em;
+        padding-top: 30px;
+    }
+    p {
+        font-size: 1.3em;
+        line-height: 1.8em;
+        color: $Dark-grayish-blue;
+        padding: 0 20px;
+    }
+    a {
+        text-decoration: none;
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        color: $Very-dark-desaturated-blue;
+        padding-bottom: 50px;
+    }
+}
+
+/* GLASS BAKCGROUND */
+.verre-bg {
+    width: 100%;
+    height: 300px;
+    background-image: url(../../images/mobile/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* STAND OUT TO THE RIGHT AUDIENCE */
+.standOut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        font-family: 'Fraunces', serif;
+        font-size: 2.5em;
+        padding-top: 30px;
+    }
+    p {
+        font-size: 1.3em;
+        line-height: 1.8em;
+        color: $Dark-grayish-blue;
+        padding: 0 20px;
+    }
+    a {
+        text-decoration: none;
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        color: $Very-dark-desaturated-blue;
+        padding-bottom: 50px;
+    }
+}
+
+/* GRAPHIC DESIGN & PHOTOGRAPHY */
+.flex-btm {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+
+    h2 {
+        font-family: 'Fraunces', serif;
+        text-transform: capitalize;
+        font-size: 2em;
+    }
+    p {
+        text-align: center;
+        font-size: 1.1em;
+        padding: 0 15px 30px 15px;
+        line-height: 1.5em;
+    }
+}
+.graphic-design {
+    background-image: url(../../images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $Graphic-design-text;
+}
+.photographie {
+    background-image: url(../../images/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $Photography-text;
+}
+
+/* CLIENT TESTIMONIAL */
+.testimonial-layout {
+    h3 {
+        text-align: center;
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        font-size: 1.2em;
+        color: $Grayish-blue;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        padding-top: 50px;
+    }
+}
+.client-layout {
+    width: 80%;
+    margin: 75px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+        width: 25%;
+        height: auto;
+        border-radius: 50%;
+    }
+    p {
+        font-size: 1.1em;
+        padding: 0 5px;
+        line-height: 1.5em;
+        color: $Dark-grayish-blue;
+    }
+    .names {
+        font-family: 'Fraunces', serif;
+        color: $Very-dark-desaturated-blue;
+
+        span {
+            font-family: 'Barlow', sans-serif;
+            font-weight: lighter;
+            color: $Dark-grayish-blue;
+        }
+    }
+}
+
+.grid-layout {
+    width: 100%;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 225px 225px;
+
+    .lait {
+        background-image: url(../../images/mobile/image-gallery-milkbottles.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .oranges{
+        background-image: url(../../images/mobile/image-gallery-orange.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cone {
+        background-image: url(../../images/mobile/image-gallery-cone.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sucre {
+        background-image: url(../../images/mobile/image-gallery-sugar-cubes.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+/* FOOTER */  
+footer {
+    width: 100%;
+    color: $Footer;
+    background-color: $Footer-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ftr-logo img {
+        width: 200px;
+        padding: 50px 0 30px 0;
+    }
+    .ftr-menu {
+        width: 66%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 60px;
+
+        a {
+            text-decoration: none;
+            color: $Footer;
+        }
+        a:hover {
+            color: $White;
+        }
+    }
+    .ftr-icons {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+}   
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: $Footer; }
+
+
+/* ---------------------------- DESKTOP -------------------------------------- */
+@media (min-width: 768px) {
+    header {
+        height: 100vh;
+        background-image: url(../../images/desktop/image-header.jpg);
+        
+        .header-flex {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            padding-top: 30px;
+
+            .burger { display: none !important; }
+
+            .menuWrapper {
+                width: auto;
+                height: auto;
+            
+                display: block !important;
+            
+                background-color: transparent;
+                position: inherit;
+    
+                a { color: $White; padding: 0 1vw; }
+                a:hover { color: $Yellow; }
+                button { background-color: $White; transition: 250ms; }
+                button:hover { 
+                    background-color: $Yellow;
+                    transition: 250ms;
+                }
+            }
+            
+        }
+    
+        .header-title {
+            margin: 120px auto;
+    
+            h1 {
+                font-size: 4rem;
+                padding-bottom: 50px;
+            }
+            .arrow-hdr img { height: 120px; }
+        }
+    }
+    .grid-layout-desktop {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 75vh 75vh 75vh;
+
+        .oeuf-bg {
+            grid-column: 2;
+            grid-row: 1;
+            width: 100%;
+            height: 100%;
+            background-image: url(../../images/desktop/image-transform.jpg);
+
+        }
+        .verre-bg {
+            width: 100%;
+            height: 100%;
+            background-image: url(../../images/desktop/image-stand-out.jpg);
+        }
+    }
+
+    .aboutYourBrand {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        text-align: left;
+        padding:  0 7vw 0 10vw;
+    
+        h2 {
+            font-size: 2.6em;
+            font-weight: 900;
+            padding-top: 0px;
+        }
+        p {
+            font-size: 1.15em;
+            line-height: 1.8em;
+            padding: 0 0px;
+        }
+        a { padding-bottom: 0px; }
+    }
+
+    .standOut {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        text-align: left;
+        padding:  0 10vw 0 7.6vw;
+    
+        h2 {
+            font-size: 2.5em;
+            font-weight: 900;
+            padding-top: 0px;
+        }
+        p {
+            font-size: 1.15em;
+            line-height: 1.8em;
+            padding: 0 0px;
+        }
+        a { padding-bottom: 0px; }
+    }
+
+    .graphic-design { background-image: url(../../images/desktop/image-graphic-design.jpg); }
+    .photographie { background-image: url(../../images/desktop/image-photography.jpg); }
+
+    .flex-btm {
+        h2 {
+            font-size: 1.7em;
+            font-weight: 900;
+        }
+        p {
+            text-align: center;
+            font-size: 1em;
+            padding: 0 25% 30px 25%;
+            line-height: 1.5em;
+        }
+    }
+
+    .testimonial-layout {
+        h3 { padding-top: 150px; }
+    }
+    .client-grid {
+        width: 78%;
+        margin: 0 auto;
+        display: flex;
+        padding-bottom: 70px;
+    }
+    .client-layout {
+        img { width: 70px; margin-bottom: 50px;}
+        p {
+            font-size: 1.1em;
+            padding: 0 18px;
+            line-height: 1.7em;
+            color: $Dark-grayish-blue;
+        }
+        .names {
+            span { font-size: 0.8em; }
+        }
+    }
+
+    .grid-layout {
+        width: 100%;
+        height: 56.5vh;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 56.5vh;
+    
+        .lait { background-image: url(../../images/desktop/image-gallery-milkbottles.jpg); }
+        .oranges{ background-image: url(../../images/desktop/image-gallery-orange.jpg); }
+        .cone { background-image: url(../../images/desktop/image-gallery-cone.jpg); }
+        .sucre { background-image: url(../../images/desktop/image-gallery-sugarcubes.jpg); }
+    }
+
+
+    footer {
+        .ftr-menu {
+            width: 300px;
+            font-size: 1.1em;
+        }
+        .ftr-icons { width: 170px; }
+    }  
+}
